@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --text-light-main-color: #fff;
+    --text-dark-main-color: #000;
+    --text-hover-light-main-color: #fff;
+    --text-hover-dark-main-color: #000;
+
+    --bg-light-main-color: #fff;
+    --bg-dark-main-color: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.container {
+    margin: auto 2rem;
+}
+/* HEADER */
+header {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* border-bottom: 1px solid #eee; */
+    color: var(--text-dark-main-color);
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+header.scrolled {
+    color: var(--text-light-main-color);
+    background-color: #000;
+    border-bottom: none;
+  }
+header .container {
+    height: 100%;
+}
+header .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .content .logo {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+}
+header .content .logo:hover {
+    text-decoration: underline;
+    color: var(--text-hover-light-main-color);
+}
+header .content nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .content nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header .content nav ul li {
+    height: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+header .content nav ul li:nth-child(1) {
+    margin-left: 0;
+}
+header .content nav ul li a {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+header .content nav ul li a:hover {
+    background-color: var(--bg-light-main-color);
+    color: var(--text-hover-dark-main-color);
+}
+/* ////////////////////////////////////////////////// */
+section {
+    height: 100vh;
+    /* background-color: #ccc; */
+}
+section .container {
+    height: 100%;
+}
+section .content {
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    /* background-color: red; */
+}
+/* HOME */
+.home {
+    height: 100vh;
+    background-color: #fbffe7;
+    margin-top: 0;
+    background: linear-gradient(90deg, #f97d5b, #f9a87b);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(32deg, #ffa585, #ffeda0);
+    background-size: 400% 400%;
+    animation: ganimate 5s ease infinite;
+}
+@keyframes ganimate {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+.home .content {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home .content h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+.home .content .man {
+    position: relative;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    font-size: 10rem;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #f9a87b;
+    background-image: url('/images/3d-business-young-woman-chatting-online-with-headphones.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.home .content h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+.home .content .man .i1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -300px;
+    bottom: 20px;
+    z-index: 2;
+    background-image: url('/images/techny-coding-sign.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: i2 1s ease-in-out alternate-reverse infinite;
+}
+@keyframes i {
+    0% {
+        transform: translateY(50px);
+        transition: 2s translateY ease-in-out;
+    }
+}
+@keyframes i2 {
+    0% {
+        transform: translateY(-50px);
+        transition: 2s translateY ease-in-out;
+    }
+}
+.home .content .man .i2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -300px;
+    background-image: url('/images/doodle-purple-texture-star.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: i2 1s 3s ease-in-out alternate-reverse infinite;
+}
+
+.home .content .man .i3 {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    background-image: url('/images/kingdom-1263.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.about .content .parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .home .content .parent .item {
+    height: 100vh;
+    width: 50%;
+    border-left: 1px solid aquamarine;
+    background-color: red;
+} */
+.about .content .parent .item {
+    width: 50%;
+    height: 100%;
+}
+.about .content .parent .item1 {
+    background: url('/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .content .parent .item2 {
+    padding: 10px 20px;
+    /* border-radius: 10px; */
+    background-color: rgb(220, 220, 220);
+}
+
+/* Project */
+.project .content {
+    background-color: #ffeda0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "d1 d2"
+      ". .";
+      height: 100%;
+      width: 100%;
+  }
+  
+  .d1 { grid-area: d1; }
+  
+  .d2 { grid-area: d2; }
+  
+.d1 {
+    background-color: red;
+    background: url('/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d2{
+    background-color: rgb(35, 93, 97);
+}
+/* contact */
+.contact {
+    height: 50vh;
+    background-color: rgb(0, 77, 102);
+
+}
+.contact .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact .content i {
+    font-size: 50px;
+    color: white;
+}
+.contact .content i:hover {
+    color: rgb(0, 183, 255);
+}
