@@ -150,7 +150,7 @@ section .content {
     margin: 0;
     border-radius: 50%;
     background-color: #f9a87b;
-    background-image: url('/images/3d-business-young-woman-chatting-online-with-headphones.png');
+    background-image: url('/portfolio/images/3d-business-young-woman-chatting-online-with-headphones.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ section .content {
     right: -300px;
     bottom: 20px;
     z-index: 2;
-    background-image: url('/images/techny-coding-sign.png');
+    background-image: url('/portfolio/images/techny-coding-sign.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ section .content {
     height: 150px;
     position: absolute;
     left: -300px;
-    background-image: url('/images/doodle-purple-texture-star.png');
+    background-image: url('/portfolio/images/doodle-purple-texture-star.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ section .content {
     height: 100px;
     position: absolute;
     top: -100px;
-    background-image: url('/images/kingdom-1263.png');
+    background-image: url('/portfolio/images/kingdom-1263.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -227,7 +227,7 @@ section .content {
     height: 100%;
 }
 .about .content .parent .item1 {
-    background: url('/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
+    background: url('/portfolio/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,7 +266,7 @@ section .content {
   
 .d1 {
     background-color: red;
-    background: url('/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
+    background: url('/portfolio/images/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
